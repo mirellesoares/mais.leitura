@@ -1,1 +1,3 @@
-function hello()
+function oi() {
+  console.log ('ainn')
+}
