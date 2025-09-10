@@ -1,0 +1,10 @@
+services:
+  db:
+    image: postgres:9.5.25
+    container_name: db
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+volumes:
+  db_data:
+    driver: local
