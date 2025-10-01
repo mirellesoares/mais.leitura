@@ -4,9 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "linter": "prettier --check .",
-    "format": "prettier --write .",
-    "test": "jest --watch"
+    "lint:check": "prettier --check .",
+    "lint:fix": "prettier --write .",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "service:up": "docker-compose up -d",
+    "service:down": "docker-compose down"
   },
   "author": "",
   "license": "ISC",
