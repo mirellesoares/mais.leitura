@@ -5,8 +5,8 @@ services:
     ports:
       - 5432:5432
     environment:
-      - POSTGRES_PASSWORD=1234
-      - POSTGRES_USER=Mirelle
+      - POSTGRES_PASSWORD=0258
+      - POSTGRES_USER=mirelle
       - POSTGRES_DB=maisleitura
     volumes:
       - db_data:/var/lib/postgresql/data
