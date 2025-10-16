@@ -9,13 +9,15 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "service:up": "docker-compose up -d",
-    "service:down": "docker-compose down"
+    "service:down": "docker-compose down",
+    "migrate": "node-pg-migrate create"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^17.2.3",
     "express": "^5.1.0",
+    "node-pg-migrate": "^8.0.3",
     "pg": "^8.16.3"
   },
   "devDependencies": {
