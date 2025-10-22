@@ -9,7 +9,7 @@ services:
       - POSTGRES_USER=${DB_USER}
       - POSTGRES_DB=${DB_NAME}
     volumes:
-      - db_data:/var/lib/postgresql/data
+      - x_db_data:/var/lib/postgresql/data
   pgweb:
     image: sosedoff/pgweb
     ports:
@@ -18,5 +18,5 @@ services:
       - db
 
 volumes:
-  db_data:
+  x_db_data:
     driver: local
