@@ -10,7 +10,7 @@
     "test:watch": "jest --watch",
     "service:up": "docker-compose up -d",
     "service:down": "docker-compose down",
-    "migrate": "node-pg-migrate create"
+    "migrate:create": "node-pg-migrate -m infra/migrations create"
   },
   "author": "",
   "license": "ISC",
