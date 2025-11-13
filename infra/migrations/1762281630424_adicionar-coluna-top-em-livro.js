@@ -9,7 +9,7 @@ export const shorthands = undefined;
  * @returns {Promise<void> | void}
  */
 export const up = (pgm) => {
-  pgm.sql(`    ALTER TABLE livro ADD COLUMN top BOOLEAN DEFAULT false;
+  pgm.sql(`    ALTER TABLE livro ADD COLUMN top_livro BOOLEAN DEFAULT false;
     `)
 };
 
