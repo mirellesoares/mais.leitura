@@ -11,5 +11,9 @@ const sql = `SELECT * FROM livro WHERE top_livro = true`;
 const resultados = await query(sql)
 return resultados;
 }
-
-module.exports = { consultarTodos, consultaTops };
+async function consultaMasAdquiridos(){
+const sql = `SELECT * FROM livro WHERE livros_mas_adiquiridos = true`;
+const resultados = await query(sql)
+return resultados;
+}
+module.exports = { consultarTodos, consultaTops, consultaMasAdquiridos };
