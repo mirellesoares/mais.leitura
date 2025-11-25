@@ -41,6 +41,10 @@ app.get("/", async function (req, res) {
     <ul>
     ${itensMaisAdquiridos}
     </ul>
+    <p>Itens Curtidos</p>
+    <ul>
+    ${itensCurtidos}
+    </ul>
   </body>
 </html>`;
 
